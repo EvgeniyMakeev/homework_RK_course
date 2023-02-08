@@ -40,7 +40,11 @@ public class PassengerVehicle extends GroundVehicle {
                 "Расход топлива (л/100км) - " + getFuelConsumption() + '\n';
     }
 
-    public void calcCarConsumedFuel(double hour) {
+    public void getCalcCarConsumesFuel(double hour) {
+        calcCarConsumedFuel(hour);
+    }
+
+    private void calcCarConsumedFuel(double hour) {
         double consumedFuel = ((hour * getMaxSpeed()) / 100) * getFuelConsumption();
         System.out.println("За время " + hour + " часа, автомобиль " + getBrand() +
                 " двигаясь с максимальной скоростью " + getMaxSpeed() +

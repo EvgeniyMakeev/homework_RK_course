@@ -11,7 +11,7 @@ public class VehicleRuner {
         System.out.println(carPassenger);
         System.out.println("Сколько часов вы хотите проехать?");
         int hour = scan.nextInt();
-        carPassenger.calcCarConsumedFuel(hour);
+        carPassenger.getCalcCarConsumesFuel(hour);
 
         CargoVehicle cargoVehicle = new CargoVehicle(630,180,460, "Камаз", 6,
                 23, 500);
