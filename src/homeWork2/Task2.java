@@ -23,5 +23,6 @@ public class Task2 {
 
         System.out.println(a + b <= c || a + c <= b || b + c <= a ? "Такой треугольник не существует!" : "Такой треугольник существует!");
 
+        scan.close();
     }
 }

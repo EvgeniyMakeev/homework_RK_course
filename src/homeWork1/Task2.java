@@ -1,7 +1,6 @@
 package homeWork1;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Определить число, полученное выписыванием в обратном порядке цифр
@@ -10,7 +9,8 @@ import java.util.Arrays;
 
 public class Task2 {
     public static void main(String[] args) {
-        int n = 6985;
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
         String nString = String.valueOf(n);
         char[] nArr = nString.toCharArray();
         for (int i = nArr.length - 1 ; i >= 0 ; i--) {
